@@ -1,5 +1,3 @@
-"use strict";
-
 class LikeButton extends React.Component {
   constructor(props) {
     super(props);
@@ -11,16 +9,15 @@ class LikeButton extends React.Component {
   }
   render() {
     // Display a "Like" <button>
-    return e(
-      "button",
-      { style: { margin: "10px" }, onClick: this.onLike },
-      `Like ${this.state.like}`
+    return (
+      <button style={{ margin: "10px" }} onClick={this.onLike}>
+        Like {this.state.like}
+      </button>
     );
   }
 }
 
-const domContainer = document
-  .querySelectorAll(".like_container")
-  .forEach((domContainer) => {
-    ReactDOM.render(e(LikeButton), domContainer);
-  });
+const domContainer_like = document.querySelectorAll(".like_container");
+domContainer_like.forEach((domContainer) => {
+  ReactDOM.render(<LikeButton />, domContainer);
+});

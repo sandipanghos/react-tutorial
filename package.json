@@ -1,0 +1,25 @@
+{
+  "name": "react-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Greeting.js",
+  "scripts": {
+    "start": "babel --watch src --out-dir ./dist --presets react-app/prod",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandipanghos/react-tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandipanghos/react-tutorial/issues"
+  },
+  "homepage": "https://github.com/sandipanghos/react-tutorial#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2"
+  }
+}
