@@ -1,7 +1,13 @@
 var e = React.createElement;
 
 function Greeting(props) {
-  return React.createElement("h1", null, "Welcome ", props.username, " !");
+  return React.createElement(
+    "h1",
+    null,
+    "Welcome ",
+    props.username,
+    " !"
+  );
 }
 
 var domContainer = document.querySelector("#greeting");
