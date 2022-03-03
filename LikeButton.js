@@ -13,7 +13,7 @@ class LikeButton extends React.Component {
     // Display a "Like" <button>
     return e(
       "button",
-      { style: { margin: "10px" }, onClick: () => this.onLike() },
+      { style: { margin: "10px" }, onClick: this.onLike },
       `Like ${this.state.like}`
     );
   }
