@@ -1,8 +1,8 @@
 const e = React.createElement;
 
 function Greeting(props) {
-  return e("h1", {}, `Welcome ${props.username} !`);
+  return <h1>Welcome {props.username} !</h1>;
 }
 
 const domContainer = document.querySelector("#greeting");
-ReactDOM.render(e(Greeting, { username: "Sandipan" }), domContainer);
+ReactDOM.render(<Greeting username="John" />, domContainer);
