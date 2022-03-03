@@ -4,7 +4,7 @@
   "description": "",
   "main": "Greeting.js",
   "scripts": {
-    "start": "npx babel --watch src --out-dir . --presets react-app/prod",
+    "start": "babel --watch src --out-dir ./dist --presets react-app/prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

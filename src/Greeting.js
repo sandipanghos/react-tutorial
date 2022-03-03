@@ -1,14 +1,6 @@
-var e = React.createElement;
-
 function Greeting(props) {
-  return React.createElement(
-    "h1",
-    null,
-    "Welcome ",
-    props.username,
-    " !"
-  );
+  return <h1>Welcome {props.username} !</h1>;
 }
 
-var domContainer = document.querySelector("#greeting");
-ReactDOM.render(React.createElement(Greeting, { username: "John" }), domContainer);
+const domContainer = document.querySelector("#greeting");
+ReactDOM.render(<Greeting username="John" />, domContainer);
