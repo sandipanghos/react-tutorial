@@ -32,7 +32,7 @@ var LikeButton = function (_React$Component) {
       // Display a "Like" <button>
       return React.createElement(
         "button",
-        { onClick: this.onLike },
+        { style: { margin: "10px" }, onClick: this.onLike },
         "Like ",
         this.state.like
       );
@@ -42,5 +42,7 @@ var LikeButton = function (_React$Component) {
   return LikeButton;
 }(React.Component);
 
-var domContainer = document.querySelector("#like_container");
-ReactDOM.render(React.createElement(LikeButton, null), domContainer);
+var domContainer_like = document.querySelectorAll(".like_container");
+domContainer_like.forEach(function (domContainer) {
+  ReactDOM.render(React.createElement(LikeButton, null), domContainer);
+});
